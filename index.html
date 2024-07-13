@@ -1,43 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
     <title>Portfolio</title>
 </head>
+
 <body>
-
     <!-- Header -->
-    <header class="position-relative vh-100 ">
+    <header class="position-relative vh-100">
         <div class="bg-dark opacity-75 w-100 vh-100 position-absolute top-0 start-0"></div>
-
-        <nav class="navbar navbar-expand-lg position-relative">
+        <nav class="navbar navbar-expand-lg position-relative sticky-top">
             <div class="nav-content w-100 d-flex ms-3 me-3">
                 <a class="navbar-brand" href="#">
-                    <img src="images/logo-light.png" alt="logo">
+                    <img src="images/logo-light.png" alt="logo" />
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNav">
                     <ul class="navbar-nav fs-5">
                         <li class="nav-item">
-                            <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active text-light" aria-current="page" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="#">About</a>
+                            <a class="nav-link text-light" href="#about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="#">What I Do</a>
+                            <a class="nav-link text-light" href="#services">What I Do</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="#">Resume</a>
+                            <a class="nav-link text-light" href="#resume">Resume</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-light" href="#">Portfolio</a>
@@ -64,18 +66,227 @@
             </div>
         </nav>
 
-        <div class="d-flex justify-content-center align-items-center h-75 position-relative text-center ">
+        <div class="d-flex justify-content-center align-items-center h-75 position-relative text-center" id="home">
             <div class="content container">
                 <h1 class="display-4 mb-4 fs-3 fw-bold text-white">Welcome</h1>
                 <div class="animated-text text-white">
                     <span class="a-text p-3"></span>
                 </div>
-                <p class="lead fs-4 mb-5 text-white">based in Los Angeles, California.</p>
+                <p class="lead fs-4 mb-5 text-white">
+                    based in Los Angeles, California.
+                </p>
                 <a href="#" class="home-btn btn fs-5 text-white rounded-pill ps-5 pe-5">Hire Me</a>
             </div>
         </div>
     </header>
 
+    <section class="about py-5 bg-white" id="about">
+        <div class="heading position-relative mb-5">
+            <h1 class="heading-shadow text-center fw-bold">ABOUT ME</h1>
+            <h2 class="par position-absolute top-50 start-50 translate-middle fs-2 fw-bold">
+                Know Me More
+            </h2>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="text col-lg-8">
+                    <h3 class="fw-bold">
+                        I'm <span>Simone Olivia</span>, a Web Developer
+                    </h3>
+                    <p class="par lh-lg">
+                        I help you build brand for your business at an affordable price.
+                        Thousands of clients have procured exceptional results while
+                        working with our dedicated team. when an unknown printer took a
+                        galley of type and scrambled it to make a type specimen book.
+                    </p>
+                    <p class="par lh-lg">
+                        Delivering work within time and budget which meets client’s
+                        requirements is our moto. Lorem Ipsum has been the industry's
+                        standard dummy text ever when an unknown printer took a galley.
+                    </p>
+                </div>
+
+                <div class="col-lg-5 col-xl-4">
+                    <div class="ps-lg-4">
+                        <ul class="list">
+                            <li class="text-decoration-none">
+                                <span class="fw-600 me-2">Name:</span>
+                                Simone Olivia
+                            </li>
+                            <li class="text-decoration-none">
+                                <span class="fw-600 me-2">E-mail:</span>
+                                <a href="mailto:chat@simone.com" class="text-decoration-none">chat@simone.com</a>
+                            </li>
+                            <li class="text-decoration-none">
+                                <span class="fw-600 me-2">Age:</span>
+                                28
+                            </li>
+                            <li class="border-0 text-decoration-none">
+                                <span class="fw-600 me-2">From:</span>
+                                Los Angeles, California
+                            </li>
+                        </ul>
+                        <a href="#" class="about-btn rounded-pill p-2 ps-4 pe-4 fs-5 text-decoration-none ms-4">Download
+                            CV</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row py-5">
+                <div class="fea-c col-6 col-md-3">
+                    <div class="featured-box text-center">
+                        <h4 class="text-12 mb-0 text-muted"><span>10</span>+</h4>
+                        <p class="mb-0">Years Experiance</p>
+                    </div>
+                </div>
+                <div class="fea-c col-6 col-md-3">
+                    <div class="featured-box text-center">
+                        <h4 class="text-12 mb-0 text-muted"><span>250</span>+</h4>
+                        <p class="mb-0">Happy Clients</p>
+                    </div>
+                </div>
+                <div class="fea-c col-6 col-md-3">
+                    <div class="featured-box text-center">
+                        <h4 class="text-12 mb-0 text-muted"><span>500</span>+</h4>
+                        <p class="mb-0">Projects Completed</p>
+                    </div>
+                </div>
+                <div class="fea-c col-6 col-md-3">
+                    <div class="featured-box text-center border-0">
+                        <h4 class="text-12 mb-0 text-muted"><span>38</span></h4>
+                        <p class="mb-0">Get Awards</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services py-5 back-color" id="services">
+        <div class="heading position-relative mb-5">
+            <h1 class="heading-shadow text-center fw-bold">SERVICES</h1>
+            <h2 class="par position-absolute top-50 start-50 translate-middle fs-2 fw-bold">
+                What I Do
+            </h2>
+        </div>
+        <div class="container">
+            <div class="col-lg-11 mx-auto">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="service-box mb-5">
+                            <div class="d-flex">
+                                <div class="service-box-icon shadow-sm rounded bg-white">
+                                    <i class="fas fa-palette"></i>
+                                </div>
+                                <div class="right">
+                                    <h3 class="">Graphic Design</h3>
+                                    <p class="mb-0">
+                                        Lisque persius interesset his et, in quot quidam
+                                        persequeris vim, ad mea essent possim iriure.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="service-box mb-5">
+                            <div class="d-flex">
+                                <div class="service-box-icon shadow-sm rounded bg-white">
+                                    <i class="fas fa-desktop"></i>
+                                </div>
+                                <div class="right">
+                                    <h3 class="">Web Design</h3>
+                                    <p class="mb-0">
+                                        Lisque persius interesset his et, in quot quidam
+                                        persequeris vim, ad mea essent possim iriure.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="service-box mb-5">
+                            <div class="d-flex">
+                                <div class="service-box-icon shadow-sm rounded bg-white">
+                                    <i class="fas fa-pencil-ruler"></i>
+                                </div>
+                                <div class="right">
+                                    <h3 class="">UI/UX Design</h3>
+                                    <p class="mb-0">
+                                        Lisque persius interesset his et, in quot quidam
+                                        persequeris vim, ad mea essent possim iriure.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="service-box mb-5">
+                            <div class="d-flex">
+                                <div class="service-box-icon shadow-sm rounded bg-white">
+                                    <i class="fas fa-paint-brush"></i>
+                                </div>
+                                <div class="right">
+                                    <h3 class="">App Design & Develop</h3>
+                                    <p class="mb-0">
+                                        Lisque persius interesset his et, in quot quidam
+                                        persequeris vim, ad mea essent possim iriure.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="service-box mb-5">
+                            <div class="d-flex">
+                                <div class="service-box-icon shadow-sm rounded bg-white">
+                                    <i class="fas fa-chart-area"></i>
+                                </div>
+                                <div class="right">
+                                    <h3 class="">Business Analysis</h3>
+                                    <p class="mb-0">
+                                        Lisque persius interesset his et, in quot quidam
+                                        persequeris vim, ad mea essent possim iriure.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="service-box mb-5">
+                            <div class="d-flex">
+                                <div class="service-box-icon shadow-sm rounded bg-white">
+                                    <i class="fas fa-bullhorn"></i>
+                                </div>
+                                <div class="right">
+                                    <h3 class="">SEO Marketing</h3>
+                                    <p class="mb-0">
+                                        Lisque persius interesset his et, in quot quidam
+                                        persequeris vim, ad mea essent possim iriure.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="resume py-5 bg-white" id="resume">
+        <div class="heading position-relative mb-5">
+            <h1 class="heading-shadow text-center fw-bold">SUMMARY</h1>
+            <h2 class="par position-absolute top-50 start-50 translate-middle fs-2 fw-bold">
+                Resume
+            </h2>
+        </div>
+    </section>
+
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
