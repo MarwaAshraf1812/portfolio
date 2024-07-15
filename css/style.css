@@ -19,7 +19,7 @@ body {
     background-attachment: fixed;
     margin: 0;
     padding: 0;
-    position: relative;
+    font-family: 'Poppins', sans-serif;
 }
 
 .navbar {
@@ -110,14 +110,13 @@ header .overlay {
 }
 
 
-
 .a-text {
-    font-size: 80px;
+    font-size: 60px !important;
 
 }
 
 .animated-text {
-    font-size: 34px;
+    font-size: 30px;
     font-weight: 600;
     min-width: 280px;
     position: relative;
@@ -136,11 +135,11 @@ header .overlay {
     animation: cursor .8s infinite, typing 10s steps(14) infinite alternate, ;
 }
 
-@keyframes cursor {
+/* @keyframes cursor {
     to {
         border-left: 2px solid rgba(255, 127, 80, 0);
     }
-}
+} */
 
 @keyframes words {
     0% {
@@ -765,24 +764,45 @@ header .overlay {
     }
 }
 
-.heading-shadow {
-    opacity: 10%;
-    font-size: 120px;
+.heading {
+    position: relative;
+    margin-bottom: 5rem;
 }
 
-.par::after {
-    content: "";
+.heading h2.par {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    padding: 0.5rem !important;
+    font-size: 2rem !important;
+    font-weight: bold;
+}
+.heading-shadow::after {
+    content: '';
     position: absolute;
-    width: 100px;
-    height: 2px;
-    background-color: var(--main-color);
-    bottom: 0;
+    bottom: -2px;
     left: 50%;
-    top: 100%;
     transform: translateX(-50%);
-    margin-top: 5px;
-
+    width: 40%;
+    height: 3px;
+    background-color: var(--main-color);
+    z-index: 1;
 }
+
+.heading-shadow::before {
+    content: attr(data-content);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.1);
+    z-index: 0;
+    white-space: nowrap;
+}
+
+
 
 .text span {
     color: var(--main-color);
@@ -849,8 +869,8 @@ header .overlay {
     background-color: var(--main-color);
     color: white;
     font-size: 16px;
-    padding: 0.5rem ;
-    width: 22%;
+    padding: 0.4rem 0.3rem;
+    width: 26%;
 }
 .card .par2 {
     font-size: 17px;
@@ -868,45 +888,111 @@ header .overlay {
 }
 .portfolio {
     background-color: var(--section-bg);
-    height: 150% !important;
-
 }
 
-.nav-item {
+.portfolio .nav-item {
     color: var(--Maintext-color) !important;
     
 }
-.nav-link {
+.portfolio .nav-link {
     color: var(--Maintext-color) !important;
     border: none !important;
     transition: transform 0.3s ease;
-    padding: 1rem !important;
+    padding: 0px 1rem !important;
     font-size: 18px;
+    cursor: pointer;
 }
 
-.nav-link:hover , .nav-link.active {
-    
+.portfolio .nav-link:hover {
     color: var(--main-color) !important;
+    cursor: pointer;
 }
-.portfolio-menu .nav-item .nav-link.active:after {
-    content: "";
+.portfolio .nav-link.active {
+    position: relative;
+    color: var(--main-color) !important;
+    background-color: var(--sectionbgcolor);
+}
+.portfolio .nav-link.active::after {
+    content: '';
     position: absolute;
-    width: 7px;
+    left: 0;
+    right: 0;
+    bottom: -5px;
     height: 2px;
-    background-color: var(--main-color);
-    bottom: 0;
-    top: 60%;
-    margin-top: 5px;
+    background-color: currentColor;
 }
 
- .gallery-box {
-    overflow: hidden;
+.contact {
+    background-color: var(--section-bg);
 }
- .gallery-image img {
-    width: 100%;
-    height: auto;
-    transition: transform 0.3s ease;
+
+.info-icon{
+    color: var(--main-color);
 }
- .gallery-image img:hover {
-    transform: scale(1.1);
+.social {
+    list-style: none !important;
+    color: var(--main-color);
+}
+
+.head-text {
+    font-size: 1.3rem;
+    color: var(--Maintext-color);
+    font-weight: 600;
+
+}
+.social-icons i {
+    color: var(--paraghraph-color) !important;
+    font-size: 20px;
+    margin-left: 0;
+}
+.social-icons-d i:hover {
+    color: rgb(202, 71, 132) !important;
+    cursor: pointer;
+}
+.social-icons-t i:hover {
+    color: rgb(56, 126, 240) !important;
+    cursor: pointer;
+}
+
+.social-icons-f i:hover {
+    color: rgb(89, 123, 202) !important;
+    cursor: pointer;
+}
+.social-icons-g i:hover {
+    color: rgb(225, 11, 72)!important;
+    cursor: pointer;
+}
+
+.social-icons-git i:hover {
+    color: black !important;
+    cursor: pointer;
+}
+
+.btn-color {
+    background-color: var(--main-color);
+    color: white;
+    padding: 1rem 2.5rem;
+}
+.btn-color:hover {
+    background-color: #428772;
+    color: white;
+}
+
+footer {
+    padding: 4rem;
+}
+footer a {
+    
+    color: var(--main-color);
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--second-textColor);
+}
+
+footer .nav-link {
+    color: var(--paraghraph-color);
+    font-size: 16px;
 }
