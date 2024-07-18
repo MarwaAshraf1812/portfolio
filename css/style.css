@@ -853,6 +853,7 @@ body {
 
 .about-btn:hover {
     background-color: #0c8e6d;
+    color: white;
 }
 
 /* Info list styling */
